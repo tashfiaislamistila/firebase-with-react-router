@@ -4,7 +4,7 @@ import CustomLink from '../../CustomLink/CustomLink';
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container">
                 <CustomLink className="navbar-brand" to="/">Random User</CustomLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <span className="navbar-text">
-                        Navbar text with an inline element
+                        User
                     </span>
                 </div>
             </div>
