@@ -1,9 +1,15 @@
 import React from 'react';
+import useUsers from '../../CustomHook/useUsers';
+import SingleUsers from '../SingleUsers/SingleUsers';
 
 const Users = () => {
+    const allUsers = useUsers('https://jsonplaceholder.typicode.com/users');
+
     return (
-        <div>
-            <h2>This is users</h2>
+        <div className='row-container'>
+            {
+                allUsers?.map(user => <SingleUsers key={user.id} user={user}></SingleUsers>)
+            }
         </div>
     );
 };
